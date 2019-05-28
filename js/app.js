@@ -61,6 +61,10 @@ function missingIngredient(){
 // Use this for the new image:
 // 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'
 
+puggy.addEventListener('mouseenter', newpuggy);
+function newpuggy(){
+    puggy.src = ('https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif');
+}
 
 
 //6. DevLeague Lunch Wagon
