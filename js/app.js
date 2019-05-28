@@ -70,7 +70,14 @@ function newpuggy(){
 //6. DevLeague Lunch Wagon
 /*Add an event listener to the `menu` div element that will display and hide the dessert item after clicking on 'Today's Special'*/
 
-
+menu.addEventListener('click', hidedessert);
+function hidedessert(){
+    if (dessert.style.display === 'none'){
+        dessert.style.display = 'block';
+    }else{
+        dessert.style.display = 'none';
+    }
+}
 
 //7. The Purple Monster
 /*Add an event listener to the `bio` paragraph element that will display Grimace's name, sign and hobbies after clicking on the paragraph element. Hint, you'll need to create new elements for each object property. Apppend these new elements into the `bio` paragraph element.*/
