@@ -7,6 +7,10 @@ The function will add the following content inside the paragraph with the id of 
 */
 
 var bliss = "Let's put some happy little bushes on the other side now. Anything you want to do you can do here. Trees cover up a multitude of sins. If you don't like it - change it. It's your world. Maybe there's a happy little waterfall happening over here."
+happy.addEventListener('click', moreTrees);
+function moreTrees(){
+    nirvana.innerHTML = bliss;
+}
 
 
 //2. Less is More
@@ -14,6 +18,14 @@ var bliss = "Let's put some happy little bushes on the other side now. Anything 
 
 The function will hide the contents in the pargraph with the id of `less`.*/
 
+less.addEventListener('click', lessContent);
+function lessContent(){
+    if(less.style.display === 'block'){
+        less.style.display = 'none';
+    }else{
+        less.style.display = 'block';
+    }
+}
 
 
 //3. Edward (エドワード)
@@ -25,15 +37,23 @@ font color: #33cc33
 border: 3px dotted rosybrown
 padding: 10px
 */
-
+worm.addEventListener('mousemove', bling);
+function bling(){
+    worm.style.color = '#33cc33';
+    worm.style.fontSize = '28px';
+    worm.style.border = '3px dotted rosybrown';
+    worm.style.padding = '10px';
+}
 
 
 //4. Beet Cakes by Dre
 /*Add an event listener to the `recipe` button that will display the missing ingredient in the paragraph of `ingredient` after clicking on the button*/
 
 var missing = "1 Big ol' beet";
-
-
+recipe.addEventListener('click', missingIngredient);
+function missingIngredient(){
+   ingredient.innerHTML = missing;
+}
 
 //5. Pug Life
 /*Add an event listener to the img element `puggy` that will rollover a new image after hovering over it.*/
