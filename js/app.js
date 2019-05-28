@@ -90,6 +90,30 @@ var grimace = {
     hobbies: ['knitting', 'scrapbooking', 'mixed martial arts']
 };
 
+bio.addEventListener('click', morebio);
+function morebio(){
+    var grimname = document.createElement('li');
+    grimname.classname = 'name';
+    grimname.innerHTML = 'Name: ' + grimace.name;
+    bio.appendChild(grimname);
+    var grimage = document.createElement('li');
+    grimage.classname = 'age';
+    grimage.innerHTML = 'Age: ' + grimace.age;
+    bio.appendChild(grimage);
+    var grimsign = document.createElement('li');
+    grimsign.clssname = 'sign';
+    grimsign.innerHTML = 'Sign: ' + grimace.sign;
+    bio.appendChild(grimsign);
+    var grimblood = document.createElement('li');
+    grimblood.classname = 'bloodtype';
+    grimblood.innerHTML = 'Bloodtype: ' + grimace.bloodtype;
+    bio.appendChild(grimblood);
+    var hobstr = grimace.hobbies.join(', '); //converted hobby array to a str with ,
+    var grimhob = document.createElement('li');
+    grimhob.classname = 'hobby';
+    grimhob.innerHTML = 'Hobby: ' + hobstr;
+    bio.appendChild(grimhob);
+}
 
 //8. Fortune Cookie
 /*Add an event listener to the `fortune` button that will generate a random message in the `showFortune` h3 element after clicking on the button*/
